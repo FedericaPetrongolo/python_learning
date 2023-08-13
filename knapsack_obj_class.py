@@ -67,6 +67,16 @@ class knapsack_obj:
         i = self.obj_weights().index(min(self.obj_weights()))
         return self.objects[i]
     
+    #to have the element with the greatest value
+    def greatest_value(self):
+        i = self.obj_values().index(max(self.obj_values()))
+        return self.objects[i]
+    
+    #to have the element with the lowest value
+    def lowest_value(self):
+        i = self.obj_values().index(min(self.obj_values()))
+        return self.objects[i]
+    
     #to return the remaining capacity
     def rem_cap(self):
         return self.capacity - self.weight()
